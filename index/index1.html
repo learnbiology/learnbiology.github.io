@@ -3,23 +3,38 @@
 <title>
 </title>
 <style>
+#img_container{
+cursor:pointer;
+}
 div.two{
   width:25%;
   height:85%;
-background-color:#AFDC6E;
+background-color:#A9DFBF;
 color:grey;
 border-width:5px;
 border-color:green;
 border-style:groove;
 position:relative;
-top:-90%;
+top:5%;
 left:5%;
+}
+#img_container img {
+position:absolute;
+left:0;
+-webkit-transition: opacity 0.5s ease-in-out;
+-moz-transition: opacity 0.5s ease-in-out;
+-o-transition: opacity 0.5s ease-in-out;
+transition: opacity 0.5s ease-in-out;
+}
+#img_container img.img_bottom:hover {
+opacity:0;
 }
 </style>
 </head>
 <body>
-<div  class="one">
-<img src="index1/look.com.ua-61381.jpg" alt="Ботаніка" width="100%" height="auto">
+<div  id="img_container">
+<img src="look.com.ua-61381.jpg" alt="Ботаніка" width="100%" height="auto" class="img_top">
+<img src="dandelion_flowers_nature_macro-244740.jpg!d" alt="Ботаніка" width="100%" height="auto" class="img_bottom">
 </div>
   <div class="two">Ботаніка
   <ul>Теми
